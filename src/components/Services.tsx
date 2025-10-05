@@ -7,21 +7,33 @@ const Services = () => {
       icon: MessageSquare,
       title: "Business Chatbot",
       description: "Enhance customer interactions by automating responses with intelligent chatbots, providing seamless service.",
+      bgColor: "bg-blue-50",
+      iconBg: "bg-blue-100",
+      iconColor: "text-blue-600",
     },
     {
       icon: FileText,
       title: "Content Creation",
       description: "Effortlessly generate high-quality, engaging content tailored to your audience using AI-powered tools.",
+      bgColor: "bg-purple-50",
+      iconBg: "bg-purple-100",
+      iconColor: "text-purple-600",
     },
     {
       icon: Users,
       title: "Lead Generation",
       description: "Strengthen your sales pipeline by identifying, targeting, and attracting high-quality prospects with precision.",
+      bgColor: "bg-green-50",
+      iconBg: "bg-green-100",
+      iconColor: "text-green-600",
     },
     {
       icon: BarChart3,
       title: "Data Insights",
       description: "Extract actionable insights from complex data sets to drive informed decisions and accelerate business growth.",
+      bgColor: "bg-amber-50",
+      iconBg: "bg-amber-100",
+      iconColor: "text-amber-600",
     },
   ];
 
@@ -40,9 +52,9 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 gap-6">
           {services.map((service, index) => (
-            <Card key={index} className="p-8 border border-border hover:shadow-lg transition-shadow">
-              <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <service.icon className="w-6 h-6 text-primary" />
+            <Card key={index} className={`p-8 border-0 hover:shadow-lg transition-all ${service.bgColor}`}>
+              <div className={`${service.iconBg} w-14 h-14 rounded-2xl flex items-center justify-center mb-6`}>
+                <service.icon className={`w-7 h-7 ${service.iconColor}`} />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">{service.title}</h3>
               <p className="text-muted-foreground">{service.description}</p>
