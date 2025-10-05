@@ -47,8 +47,8 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <Card key={index} className="p-8 border border-border bg-card">
               <div className="mb-6">
-                <h3 className="text-lg text-primary font-semibold mb-2">{plan.name}</h3>
-                <p className="text-2xl font-bold text-foreground mb-3">{plan.subtitle}</p>
+                <p className="text-sm text-muted-foreground mb-2">{plan.name}</p>
+                <h3 className="text-2xl font-bold text-foreground mb-3">{plan.subtitle}</h3>
                 <p className="text-muted-foreground">{plan.description}</p>
               </div>
 
