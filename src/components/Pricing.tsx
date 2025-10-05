@@ -28,7 +28,7 @@ const Pricing = () => {
         "Dedicated project manager",
         "Post-launch support included",
       ],
-      bgColor: "bg-rose-50",
+      bgColor: "bg-emerald-50",
     },
   ];
 
