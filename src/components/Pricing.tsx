@@ -45,7 +45,7 @@ const Pricing = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {plans.map((plan, index) => (
-            <Card key={index} className="p-8 border border-border bg-card">
+            <Card key={index} className="p-8 border border-border bg-card rounded-3xl">
               <div className="mb-6">
                 <p className="text-sm text-muted-foreground mb-2">{plan.name}</p>
                 <h3 className="text-2xl font-bold text-foreground mb-3">{plan.subtitle}</h3>
